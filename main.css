@@ -1,0 +1,52 @@
+.table{
+    width:300px;
+}
+
+.display{
+    background-color:#202124;
+    height: 40px;
+    padding:0;
+    text-align: right;
+    color:#e8eaed;
+    font-size: 24px;
+    border:none;
+}
+
+.button{
+    display: flex;
+    justify-content :space-between;
+}
+
+.number{
+    background-color: #808080;
+    border:1px solid #808080;
+    color:#e8eaed;
+}
+
+.symbol{
+    background-color: #696969;
+    border:1px solid #696969;
+    color:#e8eaed;
+}
+
+.equal{
+    background-color:#8ab4f8;
+    border:1px solid #8ab4f8;
+}
+
+.big-button{
+    width: 112.5px;
+}
+
+input{
+    height: 30px;
+}
+
+td{
+    width:75px;
+}
+
+td input{
+    width:100%;
+}
+

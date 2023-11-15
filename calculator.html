@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="./main.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>電卓</title>
+  </head>
+  <body>
+    <table class="table">
+      <!-- 液晶画面部分 -->
+      <tr>
+        <td>
+          <input type="text" class="display" value="" id="display" disabled>
+        </td>
+      </tr>
+  
+      <!-- 上から1段目（7~9,÷） -->
+      <tr class="button">
+        <td><input type="button" value="7" class="number" id="input7"></td>
+        <td><input type="button" value="8" class="number" id="input8"></td>
+        <td><input type="button" value="9" class="number" id="input9"></td>
+        <td><input type="button" value="⇦" class="symbol" id="delete"></td>
+      </tr>
+        
+      <!-- 上から2段目（4~6,×） -->
+      <tr class="button">
+        <td><input type="button" value="4" class="number" id="input4"></td>
+        <td><input type="button" value="5" class="number" id="input5"></td>
+        <td><input type="button" value="6" class="number" id="input6"></td>
+        <td><input type="button" value="×" class="symbol" id="operator*"></td>
+      </tr>
+  
+      <!-- 上から3段目（1~3,-） -->
+      <tr class="button">
+        <td><input type="button" value="1" class="number" id="input1"></td>
+        <td><input type="button" value="2" class="number" id="input2"></td>
+        <td><input type="button" value="3" class="number" id="input3"></td>
+        <td><input type="button" value="-" class="symbol" id="operator-"></td>
+      </tr>
+  
+      <!-- 上から4段目（0/00/./+) -->
+      <tr class="button">
+        <td><input type="button" value="0" class="number" id="input0"></td>
+        <td><input type="button" value="00" class="number" id="input00"></td>
+        <td><input type="button" value="." class="number" id="point"></td>
+        <td><input type="button" value="+" class="symbol" id="operator+"></td>
+      </tr>
+      
+      <!-- 上から4段目（AC/del/=) -->
+      <tr class="button">
+        <div class="big">
+          <td><input type="button" value="AC" class="symbol big-button" id="clear"></td>
+          <td><input type="button" value="=" class="equal big-button" id="equal"></td>
+        </div>
+        <td><input type="button" value="÷" class="symbol" id="operator/"></td>
+      </tr>
+    </table>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
